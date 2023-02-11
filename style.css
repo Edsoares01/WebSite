@@ -1,0 +1,165 @@
+/* */
+/*CSS externo*/
+
+:root{
+
+
+    --primary: #2F2B8C;
+    --primary-dark: #1b1e59;
+    --primary-ligth:#8979f3;
+    --gray: #666666;
+    --gray-light: #f2dfe2;
+
+    
+}
+
+body {
+
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primary);/*cor de fundo */
+
+
+}
+
+div{
+
+    background-color: var(--gray-light);
+
+ 
+    width: 60%;/*lagura inicial */
+    max-width: 340px;/*largura maxima (340 + 60 de padding) */
+    margin-top: 80px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 30px;/*espaço interno */
+    text-align: center;
+    border-radius: 10px; /* coloca borda da div */
+}
+
+img{
+
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid var(--primary);/* borda da  */
+}
+
+
+h1,h2,h3,h4,h5,h6{
+
+    margin: 0;
+}
+
+h1{
+
+    color: var(--primary);/*cor da fonte */
+    font-size: 32px;
+}
+
+h2{
+
+    color: var(--primary-ligth);
+    font-size: 24px;
+}
+p{
+
+    font-size: 16px;
+    color: var(--gray);
+}
+
+ul{
+
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+
+    margin-bottom: 5px; /* espaço entre os elementos  */
+}
+
+
+/* links que estao dentro de um <li> */
+li a{
+
+    color: var(--gray-light);
+    background-color: var(--primary);
+    text-decoration: none; /* irar sublinhado do link */
+    display: block; /* faz o elemento em linha ocupar a linha toda */
+    border-radius: 3px;
+    padding: 10px; /* espaço entre os elementos, div e text  */
+    padding-bottom: 10px;
+    
+    
+}
+
+
+/* efeito ao passa o mouse, muda a cor de fundo */
+li a:hover{
+
+    background-color: var(--primary);
+}
+
+
+/* muda de cor quando é clicado */
+li a:active{
+
+    background-color: rgb(0, 255, 34);
+}
+
+
+/* formatando o id copyright */
+#copyright{
+
+color: var(--primary);
+
+}
+
+/* media query  */
+
+
+/*para telas de 1280 pra cima */
+@media(min-width: 1280px){
+
+#link-app{
+    display: none;
+}
+
+/*para telas de até 414px */
+@media(max-width: 414px){
+    div{
+
+        margin-top: 50%;
+    }
+}
+
+
+/*tamanho da foto do perfil*/
+@media (max-width: 414px){
+
+    div{
+
+        margin-top: 50px;
+    }
+
+    img{
+
+        width: 80px;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+    
+    h2{
+        font-size: 16px;
+    }
+
+}
+
+
+}
+
+
